@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Polls for days</title>
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="MainDiv">
+    <h1>Polls for Days</h1>
+    <div id="newPoll">
+        <h3>Add new poll</h3>
+        <span>And 3 questions</span>
+        <form action="javascript:void(0);" method="POST" onsubmit="addItem()">
+            <p>Poll Title</p>
+            <input type="text" id="add-name" placeholder="New Poll">
+            <p>Poll Options</p>
+            <input type="text" id="poll-option" placeholder="Option"><br>
+            <input type="text" id="poll-option2" placeholder="Option 2"><br>
+            <input type="text" id="poll-option3" placeholder="Option 3"><br>
+            <input type="submit" value="Add">
+        </form>
+    </div>
+    
+
+    <br>
+    <br>
+
+    <div id="PollsForm">
+        Select Poll: <select name="subject" id="pollSelect">
+            <option value="">Select poll</option>
+        </select>
+        <div id="result"></div> 
+    </div>
+    
+
+    
+    
+    <script src="js/site.js" asp-append-version="true"></script>
+    <script type="text/javascript">
+        getItems();
+    </script>
+    </div>
+</body>
+</html>
