@@ -2,7 +2,7 @@
 This is the epoll web application that I made for Junior Software Developer position.
 
 ## USAGE
-To run the application use
+To run the application use latest VSCODE and command
 ```
 dotnet watch run
 ```
